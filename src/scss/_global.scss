@@ -1,0 +1,7 @@
+@use "vars";
+
+body {
+  background-color: vars.$color-body;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}

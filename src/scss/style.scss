@@ -1,0 +1,8 @@
+@use "vars";
+@use "reset";
+@use "global";
+
+.aside {
+  box-shadow: vars.$shadow-default;
+  background-color: #fff;
+}
