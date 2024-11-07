@@ -1,0 +1,11 @@
+@mixin header-main-center {
+  .header,
+  .main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header {
+    max-width: vars.$main-width;
+  }
+}

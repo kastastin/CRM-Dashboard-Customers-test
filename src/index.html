@@ -13,9 +13,264 @@
     />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-
   <body>
-    <aside class="aside"></aside>
+    <header class="header">
+      <h2 class="header__title">Hello Evano 👋🏼,</h2>
+    </header>
+    <aside class="sidebar">
+      <header class="sidebar__header">
+        <a class="sidebar__logo-link" href="#">
+          <img class="sidebar__logo-img" src="images/logo.svg" alt="logo" />
+        </a>
+        <h1 class="sidebar__logo-title">Dashboard</h1>
+        <span class="sidebar__version">v.01</span>
+      </header>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">
+              <img
+                class="menu__item-img"
+                src="images/menu/dashboard.svg"
+                alt="dashboard icon"
+              />
+              <h3 class="menu__item-title">Dashboard</h3>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">
+              <img
+                class="menu__item-img"
+                src="images/menu/product.svg"
+                alt="product icon"
+              />
+              <h3 class="menu__item-title">Product</h3>
+            </a>
+          </li>
+          <li class="menu__item menu__item--active">
+            <a class="menu__item-link" href="#">
+              <img
+                class="menu__item-img menu__item-img--white"
+                src="images/menu/customers.svg"
+                alt="customers icon"
+              />
+              <h3 class="menu__item-title">Customers</h3>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">
+              <img
+                class="menu__item-img"
+                src="images/menu/income.svg"
+                alt="income icon"
+              />
+              <h3 class="menu__item-title">Income</h3>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">
+              <img
+                class="sidebar__item-img"
+                src="images/menu/promote.svg"
+                alt="promote icon"
+              />
+              <h3 class="menu__item-title">Promote</h3>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">
+              <img
+                class="menu__item-img"
+                src="images/menu/help.svg"
+                alt="help icon"
+              />
+              <h3 class="menu__item-title">Help</h3>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <footer class="sidebar__footer">
+        <p class="sidebar__footer-name">Evano</p>
+        <p class="sidebar__footer-position">Project Manager</p>
+      </footer>
+    </aside>
+    <main class="main customers">
+      <header class="customers__header">
+        <div class="customers__header-leftside">
+          <h2 class="customers__title">All Customers</h2>
+          <p class="customers__active-memebers">Active Members</p>
+        </div>
+        <form class="searchbar" action="#">
+          <input class="searchbar__input" type="text" placeholder="Search" />
+          <button class="searchbar__btn" type="submit">
+            <img
+              class="searchbar__img"
+              src="images/search.svg"
+              alt="search icon"
+            />
+          </button>
+        </form>
+      </header>
+      <div class="customers__content">
+        <table class="table customers__table">
+          <thead class="table__header">
+            <tr class="table__row">
+              <th class="table__cell table__cell--header table__cell--name">
+                Customer Name
+              </th>
+              <th class="table__cell table__cell--header table__cell--company">
+                Company
+              </th>
+              <th class="table__cell table__cell--header table__cell--phone">
+                Phone Number
+              </th>
+              <th class="table__cell table__cell--header table__cell--email">
+                Email
+              </th>
+              <th class="table__cell table__cell--header table__cell--country">
+                Country
+              </th>
+              <th class="table__cell table__cell--header table__cell--status">
+                Status
+              </th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__row">
+              <td class="table__cell">Jane Cooper</td>
+              <td class="table__cell">Microsoft</td>
+              <td class="table__cell">(225) 555-0118</td>
+              <td class="table__cell">jane@microsoft.com</td>
+              <td class="table__cell">United States</td>
+              <td class="table__cell">
+                <span class="table__status table__status--active">Active</span>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">Floyd Miles</td>
+              <td class="table__cell">Yahoo</td>
+              <td class="table__cell">(205) 555-0100</td>
+              <td class="table__cell">floyd@yahoo.com</td>
+              <td class="table__cell">Kiribati</td>
+              <td class="table__cell">
+                <span class="table__status table__status--inactive"
+                  >Inactive</span
+                >
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">Ronald Richards</td>
+              <td class="table__cell">Adobe</td>
+              <td class="table__cell">(302) 555-0107</td>
+              <td class="table__cell">ronald@adobe.com</td>
+              <td class="table__cell">Israel</td>
+              <td class="table__cell">
+                <span class="table__status table__status--inactive"
+                  >Inactive</span
+                >
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">Marvin McKinney</td>
+              <td class="table__cell">Tesla</td>
+              <td class="table__cell">(252) 555-0126</td>
+              <td class="table__cell">marvin@tesla.com</td>
+              <td class="table__cell">Iran</td>
+              <td class="table__cell">
+                <span class="table__status table__status--active">Active</span>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">Jerome Bell</td>
+              <td class="table__cell">Google</td>
+              <td class="table__cell">(629) 555-0129</td>
+              <td class="table__cell">jerome@google.com</td>
+              <td class="table__cell">Réunion</td>
+              <td class="table__cell">
+                <span class="table__status table__status--active">Active</span>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">Kathryn Murphy</td>
+              <td class="table__cell">Microsoft</td>
+              <td class="table__cell">(406) 555-0120</td>
+              <td class="table__cell">kathryn@microsoft.com</td>
+              <td class="table__cell">Curaçao</td>
+              <td class="table__cell">
+                <span class="table__status table__status--active">Active</span>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">Jacob Jones</td>
+              <td class="table__cell">Yahoo</td>
+              <td class="table__cell">(208) 555-0112</td>
+              <td class="table__cell">jacob@yahoo.com</td>
+              <td class="table__cell">Brazil</td>
+              <td class="table__cell">
+                <span class="table__status table__status--active">Active</span>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">Kristin Watson</td>
+              <td class="table__cell">Facebook</td>
+              <td class="table__cell">(704) 555-0127</td>
+              <td class="table__cell">kristin@facebook.com</td>
+              <td class="table__cell">Åland Islands</td>
+              <td class="table__cell">
+                <span class="table__status table__status--inactive"
+                  >Inactive</span
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <footer class="customers__footer">
+        <p class="customers__footer-info">
+          Showing data 1 to 8 of 256K entries
+        </p>
+        <ul class="pagination">
+          <li class="pagination__item">
+            <button
+              class="pagination__btn pagination__btn--prev"
+              type="button"
+              disabled
+            >
+              <img
+                src="images/pagination/arrow-prev.svg"
+                alt="prev arrow icon"
+              />
+            </button>
+          </li>
+          <li class="pagination__item pagination__item--active">
+            <button class="pagination__btn" type="button">1</button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__btn" type="button">2</button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__btn" type="button">3</button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__btn" type="button">4</button>
+          </li>
+          <li class="pagination__item pagination__item--transparent">
+            <span class="pagination__dots">...</span>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__btn" type="button">40</button>
+          </li>
+          <li class="pagination__item">
+            <button class="pagination__btn pagination__btn--next" type="button">
+              <img
+                src="images/pagination/arrow-next.svg"
+                alt="next arrow icon"
+              />
+            </button>
+          </li>
+        </ul>
+      </footer>
+    </main>
     <script src="js/script.min.js"></script>
   </body>
 </html>
